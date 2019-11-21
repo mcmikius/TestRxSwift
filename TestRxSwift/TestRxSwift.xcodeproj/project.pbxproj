@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F326CFE42386FE7B00F7C5CE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F326CFE32386FE7B00F7C5CE /* RxSwift */; };
+		F326CFE62386FE7B00F7C5CE /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F326CFE52386FE7B00F7C5CE /* RxTest */; };
+		F326CFE82386FE7B00F7C5CE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F326CFE72386FE7B00F7C5CE /* RxRelay */; };
+		F326CFEA2386FE7B00F7C5CE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F326CFE92386FE7B00F7C5CE /* RxCocoa */; };
+		F326CFEC2386FE7B00F7C5CE /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F326CFEB2386FE7B00F7C5CE /* RxBlocking */; };
 		F380CBD32386FD10005CE80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380CBD22386FD10005CE80E /* AppDelegate.swift */; };
 		F380CBD52386FD10005CE80E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380CBD42386FD10005CE80E /* SceneDelegate.swift */; };
 		F380CBD72386FD10005CE80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F380CBD62386FD10005CE80E /* ViewController.swift */; };
@@ -31,6 +36,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F326CFE82386FE7B00F7C5CE /* RxRelay in Frameworks */,
+				F326CFE62386FE7B00F7C5CE /* RxTest in Frameworks */,
+				F326CFEA2386FE7B00F7C5CE /* RxCocoa in Frameworks */,
+				F326CFE42386FE7B00F7C5CE /* RxSwift in Frameworks */,
+				F326CFEC2386FE7B00F7C5CE /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,13 @@
 			dependencies = (
 			);
 			name = TestRxSwift;
+			packageProductDependencies = (
+				F326CFE32386FE7B00F7C5CE /* RxSwift */,
+				F326CFE52386FE7B00F7C5CE /* RxTest */,
+				F326CFE72386FE7B00F7C5CE /* RxRelay */,
+				F326CFE92386FE7B00F7C5CE /* RxCocoa */,
+				F326CFEB2386FE7B00F7C5CE /* RxBlocking */,
+			);
 			productName = TestRxSwift;
 			productReference = F380CBCF2386FD10005CE80E /* TestRxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = F380CBC62386FD10005CE80E;
+			packageReferences = (
+				F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = F380CBD02386FD10005CE80E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +358,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F326CFE32386FE7B00F7C5CE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F326CFE52386FE7B00F7C5CE /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		F326CFE72386FE7B00F7C5CE /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F326CFE92386FE7B00F7C5CE /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F326CFEB2386FE7B00F7C5CE /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F326CFE22386FE7B00F7C5CE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F380CBC72386FD10005CE80E /* Project object */;
 }
