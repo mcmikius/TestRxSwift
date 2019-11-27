@@ -212,3 +212,39 @@ example("SideEffect") {
             print(String(format: "%.1f", $0))
         }).disposed(by: disposableBag)
 }
+
+// Fourth Lessons
+
+//example("without observeOn") {
+//    _ = Observable.of(1, 2, 3).subscribe(onNext: {
+//        print("\(Thread.current): ", $0)
+//    }, onError: nil, onCompleted: {
+//        print("Completed")
+//    }, onDisposed: nil)
+//}
+//
+//example("observeOn") {
+//    _ = Observable.of(1, 2, 3).observeOn(ConcurrentDispatchQueueScheduler(qos: .background)).subscribe(onNext: {
+//        print("\(Thread.current): ", $0)
+//    }, onError: nil, onCompleted: {
+//        print("Completed")
+//    }, onDisposed: nil)
+//}
+
+//example("subscribeOn and observeOn") {
+//    let queueOne = DispatchQueue.global(qos: .default)
+//    let queueTwo = DispatchQueue.global(qos: .default)
+//
+//    print("init Thread: \(Thread.current)")
+//    _ = Observable.create({(observer) -> Disposable in
+//        print("Observeble Thread: \(Thread.current)")
+//        observer.on(.next(1))
+//        observer.on(.next(2))
+//        observer.on(.next(3))
+//        return Disposables.create()
+//        })
+//        .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "queueOne")).observeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "queueTwo"))
+//        .subscribe(onNext: {
+//                print("\(Thread.current): ", $0)
+//            })
+//}

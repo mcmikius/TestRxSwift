@@ -167,6 +167,7 @@
 		EF8128F2226BD61900AE22C2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A011BC1C28400EF5A9F /* RxSwift.framework */; };
 		EF8128F5226BD97900AE22C2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A011BC1C28400EF5A9F /* RxSwift.framework */; };
 		EF8128F6226BD9E700AE22C2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A091BC1C28400EF5A9F /* RxCocoa.framework */; };
+		F3F480E2238EDDBD00743AB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F480DA238EDDBD00743AB0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +438,7 @@
 		C8DF92F01B0B3E67009BCF9A /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		C8DF92F21B0B3E71009BCF9A /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		C8F8C4891C277F460047640B /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		F3F480DA238EDDBD00743AB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF8128F1226BD61900AE22C2 /* RxCocoa.framework in Frameworks */,
+				F3F480E2238EDDBD00743AB0 /* UIKit.framework in Frameworks */,
 				EF8128F2226BD61900AE22C2 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -945,6 +948,7 @@
 		EF8128F0226BD61900AE22C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3F480DA238EDDBD00743AB0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
