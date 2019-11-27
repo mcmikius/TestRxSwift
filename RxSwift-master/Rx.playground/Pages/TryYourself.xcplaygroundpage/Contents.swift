@@ -197,3 +197,18 @@ example("Variables") {
     
     variable.value = "B"
 }
+
+// Third Lessons
+
+example("SideEffect") {
+    let disposableBag = DisposeBag()
+    let sequence = [0, 32, 100, 300]
+    let tempSequence = Observable.from(sequence)
+    tempSequence.do(onNext: {
+        print("\($0)F = ", terminator: "")
+        }).map({
+            Double($0 - 32) * 5 / 9.0
+        }).subscribe(onNext: {
+            print(String(format: "%.1f", $0))
+        }).disposed(by: disposableBag)
+}
