@@ -98,12 +98,43 @@
                                 <rect key="frame" x="374" y="529" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="i5q-1l-5Fe">
+                                <rect key="frame" x="300" y="575" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCm-Ce-AIg">
+                                <rect key="frame" x="20" y="581" width="261" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="SN4-fK-lfU" id="3S4-Kh-p6a"/>
+                        <outlet property="button" destination="t3J-10-l03" id="Vah-Lx-ZAI"/>
+                        <outlet property="buttonLabel" destination="6YX-qQ-qOg" id="0Y7-QC-rlD"/>
+                        <outlet property="datePicker" destination="gsL-6q-MUR" id="6LM-p1-BGe"/>
+                        <outlet property="datePickerLabel" destination="uHt-qE-9jY" id="7QB-7F-Y9z"/>
+                        <outlet property="mySwitch" destination="Oc1-6B-hPp" id="kcy-jw-QVc"/>
+                        <outlet property="progressView" destination="UL1-1a-ykL" id="vue-fD-1ru"/>
+                        <outlet property="segmentedControl" destination="3RM-70-giM" id="JZb-Kz-N6a"/>
+                        <outlet property="segmentedControlLabel" destination="n9H-T7-rWC" id="s0L-dl-b3D"/>
+                        <outlet property="slider" destination="mjw-Dn-aOf" id="NOW-zM-RI3"/>
+                        <outlet property="stepper" destination="i5q-1l-5Fe" id="ilQ-oL-bRz"/>
+                        <outlet property="stepperLabel" destination="tCm-Ce-AIg" id="k8q-aX-AKc"/>
+                        <outlet property="tapGestureRecognizer" destination="VZf-HN-jZV" id="kXM-xQ-Ltc"/>
+                        <outlet property="textField" destination="coi-NS-pkF" id="wiC-3Y-mRc"/>
+                        <outlet property="textFieldLabel" destination="3yo-We-Gy9" id="TE3-Ni-C4g"/>
+                        <outlet property="textView" destination="ikD-oP-8MA" id="QRb-b9-Lji"/>
+                        <outlet property="textViewLabel" destination="htf-A7-Ih2" id="T04-gL-4Q2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VZf-HN-jZV"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
         </scene>
