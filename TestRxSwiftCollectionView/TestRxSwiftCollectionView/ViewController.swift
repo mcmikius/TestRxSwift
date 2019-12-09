@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         return cell
     })
     
-    let data = BehaviorRelay(value: [AnimatedSectionModel(title: "Section 0", data: ["0-0"])])
-
+    let data = Variable([AnimatedSectionModel(title: "Section 0", data: ["0-0"])])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource.configureSupplementaryView = { dataSource, collectionView, kind, indexPath in
@@ -35,8 +35,34 @@ class ViewController: UIViewController {
             return header
         }
         data.asDriver().drive(collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
+        addBarButtonItem.rx.tap.asDriver().drive(onNext: {
+            let section = self.data.value.count
+            let items: [String] = {
+                var items = [String]()
+                let random = arc4random_uniform(5) + 1
+                (0...random).forEach {
+                    items.append("\(section)-\($0)")
+                }
+                return items
+            }()
+            self.data.value += [AnimatedSectionModel(title: "Section: \(section)", data: items)]
+        }).disposed(by: disposeBag)
+        
+        longGestureRecognizer.rx.event.subscribe(onNext: {
+            switch $0.state {
+            case .began:
+                guard let selectedIndexPath = self.collectionView.indexPathForItem(at: $0.location(in: self.collectionView)) else { break }
+                self.collectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+            case .changed:
+                self.collectionView.updateInteractiveMovementTargetPosition($0.location(in: $0.view!))
+            case .ended:
+                self.collectionView.endInteractiveMovement()
+            default:
+                self.collectionView.cancelInteractiveMovement()
+            }
+        }).disposed(by: disposeBag)
     }
-
-
+    
+    
 }
 
