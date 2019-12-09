@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F30F4EC8239E3E4500188290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30F4EC6239E3E4500188290 /* Main.storyboard */; };
 		F30F4ECA239E3E4600188290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30F4EC9239E3E4600188290 /* Assets.xcassets */; };
 		F30F4ECD239E3E4600188290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30F4ECB239E3E4600188290 /* LaunchScreen.storyboard */; };
+		F396060E239E3FE600FB68F2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396060D239E3FE600FB68F2 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F30F4EC9239E3E4600188290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F30F4ECC239E3E4600188290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F30F4ECE239E3E4600188290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F396060D239E3FE600FB68F2 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				C7B31350D8FE16153AE30D6D /* Pods-TestRxSwiftTableViewCollectionView.debug.xcconfig */,
 				5E951CFCC208DB70AFD7F912 /* Pods-TestRxSwiftTableViewCollectionView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 				F30F4EC0239E3E4500188290 /* AppDelegate.swift */,
 				F30F4EC2239E3E4500188290 /* SceneDelegate.swift */,
 				F30F4EC4239E3E4500188290 /* ViewController.swift */,
+				F396060D239E3FE600FB68F2 /* Food.swift */,
 				F30F4EC6239E3E4500188290 /* Main.storyboard */,
 				F30F4EC9239E3E4600188290 /* Assets.xcassets */,
 				F30F4ECB239E3E4600188290 /* LaunchScreen.storyboard */,
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30F4EC5239E3E4500188290 /* ViewController.swift in Sources */,
+				F396060E239E3FE600FB68F2 /* Food.swift in Sources */,
 				F30F4EC1239E3E4500188290 /* AppDelegate.swift in Sources */,
 				F30F4EC3239E3E4500188290 /* SceneDelegate.swift in Sources */,
 			);
