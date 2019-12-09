@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		F3598EA0239EA58100580E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3598E9E239EA58100580E94 /* Main.storyboard */; };
 		F3598EA2239EA58200580E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3598EA1239EA58200580E94 /* Assets.xcassets */; };
 		F3598EA5239EA58200580E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3598EA3239EA58200580E94 /* LaunchScreen.storyboard */; };
+		F3FBDAD8239EAFE000F35408 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDAD7239EAFE000F35408 /* Repository.swift */; };
+		F3FBDADA239EB03500F35408 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDAD9239EB03500F35408 /* RepositoryViewModel.swift */; };
+		F3FBDADC239EB08B00F35408 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDADB239EB08B00F35408 /* APIProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F3598EA1239EA58200580E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3598EA4239EA58200580E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3598EA6239EA58200580E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FBDAD7239EAFE000F35408 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F3FBDAD9239EB03500F35408 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		F3FBDADB239EB08B00F35408 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,6 @@
 				5F16A1B40BD8EC9C4049E8B8 /* Pods-TestRxNetworking.debug.xcconfig */,
 				5934684206CA6620E9A0C8A3 /* Pods-TestRxNetworking.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +89,9 @@
 				F3598E98239EA58100580E94 /* AppDelegate.swift */,
 				F3598E9A239EA58100580E94 /* SceneDelegate.swift */,
 				F3598E9C239EA58100580E94 /* ViewController.swift */,
+				F3FBDAD7239EAFE000F35408 /* Repository.swift */,
+				F3FBDAD9239EB03500F35408 /* RepositoryViewModel.swift */,
+				F3FBDADB239EB08B00F35408 /* APIProvider.swift */,
 				F3598E9E239EA58100580E94 /* Main.storyboard */,
 				F3598EA1239EA58200580E94 /* Assets.xcassets */,
 				F3598EA3239EA58200580E94 /* LaunchScreen.storyboard */,
@@ -209,7 +217,10 @@
 			files = (
 				F3598E9D239EA58100580E94 /* ViewController.swift in Sources */,
 				F3598E99239EA58100580E94 /* AppDelegate.swift in Sources */,
+				F3FBDADA239EB03500F35408 /* RepositoryViewModel.swift in Sources */,
 				F3598E9B239EA58100580E94 /* SceneDelegate.swift in Sources */,
+				F3FBDAD8239EAFE000F35408 /* Repository.swift in Sources */,
+				F3FBDADC239EB08B00F35408 /* APIProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
