@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265510EAA7177859E7695758 /* Pods_TestRxNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94E9D4120BE572B2FCC55C4 /* Pods_TestRxNetworking.framework */; };
 		F3598E99239EA58100580E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3598E98239EA58100580E94 /* AppDelegate.swift */; };
 		F3598E9B239EA58100580E94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3598E9A239EA58100580E94 /* SceneDelegate.swift */; };
 		F3598E9D239EA58100580E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3598E9C239EA58100580E94 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5934684206CA6620E9A0C8A3 /* Pods-TestRxNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRxNetworking.release.xcconfig"; path = "Target Support Files/Pods-TestRxNetworking/Pods-TestRxNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		5F16A1B40BD8EC9C4049E8B8 /* Pods-TestRxNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRxNetworking.debug.xcconfig"; path = "Target Support Files/Pods-TestRxNetworking/Pods-TestRxNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		B94E9D4120BE572B2FCC55C4 /* Pods_TestRxNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRxNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3598E95239EA58100580E94 /* TestRxNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRxNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3598E98239EA58100580E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3598E9A239EA58100580E94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265510EAA7177859E7695758 /* Pods_TestRxNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39C2CCB79F7FDB6246FBA03A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94E9D4120BE572B2FCC55C4 /* Pods_TestRxNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7D486D9F7321E42E88CB2A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F16A1B40BD8EC9C4049E8B8 /* Pods-TestRxNetworking.debug.xcconfig */,
+				5934684206CA6620E9A0C8A3 /* Pods-TestRxNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F3598E8C239EA58100580E94 = {
 			isa = PBXGroup;
 			children = (
 				F3598E97239EA58100580E94 /* TestRxNetworking */,
 				F3598E96239EA58100580E94 /* Products */,
+				C7D486D9F7321E42E88CB2A0 /* Pods */,
+				39C2CCB79F7FDB6246FBA03A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3598EA9239EA58200580E94 /* Build configuration list for PBXNativeTarget "TestRxNetworking" */;
 			buildPhases = (
+				CDAA411074D9D393CCD22384 /* [CP] Check Pods Manifest.lock */,
 				F3598E91239EA58100580E94 /* Sources */,
 				F3598E92239EA58100580E94 /* Frameworks */,
 				F3598E93239EA58100580E94 /* Resources */,
+				2AD5E954D806792469969889 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD5E954D806792469969889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestRxNetworking/Pods-TestRxNetworking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestRxNetworking/Pods-TestRxNetworking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestRxNetworking/Pods-TestRxNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAA411074D9D393CCD22384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestRxNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3598E91239EA58100580E94 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F3598EAA239EA58200580E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F16A1B40BD8EC9C4049E8B8 /* Pods-TestRxNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		F3598EAB239EA58200580E94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5934684206CA6620E9A0C8A3 /* Pods-TestRxNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
