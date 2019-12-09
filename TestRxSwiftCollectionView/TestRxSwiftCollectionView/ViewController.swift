@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var longGestureRecognizer: UILongPressGestureRecognizer!
+    
+    let disposeBag = DisposeBag()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
