@@ -14,23 +14,31 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let foods = [
+    let foods = Observable.just([
         Food(name: "Fastfood", flickrID: "fastfood"),
         Food(name: "Imageresizer", flickrID: "imageresizer"),
         Food(name: "Images", flickrID: "images"),
         Food(name: "Recipes-header", flickrID: "recipes-header-1600x1066")
-    ]
+    ])
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        foods.bind(to: tableView.rx.items(cellIdentifier: "Cell")) { row, food, cell in
+            cell.textLabel?.text = food.name
+            cell.detailTextLabel?.text = food.flickrID
+            cell.imageView?.image = food.image
+        }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(Food.self).subscribe(onNext: {
+            print("You selcted: \($0)")
+        }).disposed(by: disposeBag)
     }
 
 
 }
-
+/*
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foods.count
@@ -55,3 +63,4 @@ extension ViewController: UITableViewDelegate {
         print("your selcted: \(indexPath.row)")
     }
 }
+*/
