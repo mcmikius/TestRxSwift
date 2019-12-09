@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4FA10572FA3577E22BD12A43 /* Pods_TestRxSwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BA17DBBD0DE862760F588C /* Pods_TestRxSwiftCollectionView.framework */; };
+		F32F1294239E522C00F76219 /* AnimatedSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F1293239E522C00F76219 /* AnimatedSectionModel.swift */; };
 		F396061C239E4B3500FB68F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396061B239E4B3500FB68F2 /* AppDelegate.swift */; };
 		F396061E239E4B3500FB68F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396061D239E4B3500FB68F2 /* SceneDelegate.swift */; };
 		F3960620239E4B3500FB68F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396061F239E4B3500FB68F2 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		23F264B497BA71B05DEDC202 /* Pods-TestRxSwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRxSwiftCollectionView.release.xcconfig"; path = "Target Support Files/Pods-TestRxSwiftCollectionView/Pods-TestRxSwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		A1BA17DBBD0DE862760F588C /* Pods_TestRxSwiftCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRxSwiftCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32F1293239E522C00F76219 /* AnimatedSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSectionModel.swift; sourceTree = "<group>"; };
 		F3960618239E4B3500FB68F2 /* TestRxSwiftCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRxSwiftCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F396061B239E4B3500FB68F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F396061D239E4B3500FB68F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				F396061B239E4B3500FB68F2 /* AppDelegate.swift */,
 				F396061D239E4B3500FB68F2 /* SceneDelegate.swift */,
 				F396061F239E4B3500FB68F2 /* ViewController.swift */,
+				F32F1293239E522C00F76219 /* AnimatedSectionModel.swift */,
 				F396062F239E4CFD00FB68F2 /* CellCollectionViewCell.swift */,
 				F3960631239E4D2500FB68F2 /* HeaderCollectionReusableView.swift */,
 				F3960621239E4B3500FB68F2 /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				F3960620239E4B3500FB68F2 /* ViewController.swift in Sources */,
 				F396061C239E4B3500FB68F2 /* AppDelegate.swift in Sources */,
+				F32F1294239E522C00F76219 /* AnimatedSectionModel.swift in Sources */,
 				F3960630239E4CFD00FB68F2 /* CellCollectionViewCell.swift in Sources */,
 				F3960632239E4D2500FB68F2 /* HeaderCollectionReusableView.swift in Sources */,
 				F396061E239E4B3500FB68F2 /* SceneDelegate.swift in Sources */,
